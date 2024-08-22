@@ -1,0 +1,137 @@
+
+/*=====================  ======================*/
+
+.container{
+    max-width: 800px;
+    width: 100%;
+    background: linear-gradient(135deg, #d0e5ff, #ecfdd5);
+    padding: 10px 25px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    
+}
+
+.container .title{
+    margin: 25px auto;
+}
+
+.container .title h2{
+    margin-top: 10px;
+    text-align: center;
+    color: #105e62;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+/*===================== btn_simuler ======================*/
+.smallBox .col button{
+    margin: 8px auto;
+}
+
+.btn-simuler{
+	display: block;
+	width: 40%;
+	height: 50px;
+	border-radius: 4px;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to right, #003a94, #003a94);
+	background-size: 200%;
+	font-size: 1.4rem;
+	color: #fff;
+	margin: 3rem 0;
+	cursor: pointer;
+	transition: .5s;
+}
+.btn-simuler:hover{
+	background-position: right;
+}
+
+/*===================== inputs ======================*/
+
+.smallBox .card{
+    width: 96% !important;
+    padding: 0px !important;
+    margin: 15px 0px !important;
+}
+.smallBox .card-body{
+    padding: 10px !important; 
+}
+.smallBox .card-body span{
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #105e62;
+    opacity: .8;
+}
+
+.smallBox .col mat-form-field{
+    width: 100% !important;
+    padding: 0px !important;
+    margin: 0px auto !important;
+    border-radius: 5px !important;
+}
+
+.smallBox .col mat-form-field .mat-form-field-wrapper{
+    padding-bottom: 0px !important;
+}
+:host ::ng-deep .mat-form-field-wrapper{
+    margin: 0 !important;
+    padding-bottom: 15px;
+  }
+
+/*===================== table ======================*/
+.smallBox .col .table{
+    width: 96% !important;
+    padding: 0px !important;
+    margin-top: 30px !important;
+    
+}
+.smallBox .col .table .bg-thead{
+    background-color: #003a94; opacity: .7;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+.smallBox .col .table .bg-tbody{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/*===================== home-btn ======================*/
+
+.home_btn{
+    color: #fff; 
+    position: absolute; 
+    top: 10px; right: 10px;
+  }
+
+
+  .home_btn button {
+    background-image: linear-gradient(to right, #3a6fb3, #10cc0a);
+    background-size: 200%;
+  }
+  .home_btn button:hover {
+    background-position: right;
+  }
+  
+
+  .annuler_btn {
+    background-image: linear-gradient(to right, #5d8ed8, #b91610);
+    background-size: 200%;
+    color: white;
+    border: none;
+  }
+  .annuler_btn:hover {
+    background-position: right;
+  }
+  .confirmer_btn {
+    background-image: linear-gradient(to right, #5d8ed8, #20b80c);
+    background-size: 200%;
+    color: white;
+    border: none;
+  }
+  .confirmer_btn:hover {
+    background-position: right;
+  }

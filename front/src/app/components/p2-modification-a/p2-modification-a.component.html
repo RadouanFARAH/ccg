@@ -1,0 +1,279 @@
+
+
+<div class="globalBox">
+
+    <div class="home_btn">
+        <button  mat-icon-button mat-raised-button color="warn" (click)="gotoHome('home')"><mat-icon>home</mat-icon></button>
+    </div>
+
+    <div class="container">
+        <div class="title">
+            <h2>Modification d'identifiant N° {{element.identifiant_credit}}</h2>
+        </div>
+        <div class="smallBox">
+            <form [formGroup]="form" autocomplete="off">
+                <!-- row 1 -->
+                <div class="row row-cols-2">
+                    <div class="col">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Identifiant Crédit </mat-label>
+                            <input  matInput type="text" 
+                                class="example-right-align" autocomplete="off" placement="bottom" 
+                                triggers="focusin:focusout" formControlName="identifiant_credit">
+                        </mat-form-field>
+                    </div>
+
+                    <div class="col">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Code Intervention</mat-label>
+                            <input  matInput type="text" class="example-right-align"
+                                autocomplete="off" 
+                                placement="bottom" triggers="focusin:focusout" formControlName="code_intervention">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <!-- row 2 -->
+                <div class="row row-cols-2">
+                    <div class="col">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Denom Affaire</mat-label>
+                            <input  matInput type="text" class="example-right-align"
+                                autocomplete="off" 
+                                placement="bottom" triggers="focusin:focusout" formControlName="denom_affaire">
+                        </mat-form-field>
+                    </div>
+
+                    <div class="col">
+                        <mat-form-field appearance="fill">
+                            <mat-label>forme juridique</mat-label>
+                            <input  matInput type="text" class="example-right-align"
+                                autocomplete="off" 
+                                placement="bottom" triggers="focusin:focusout" formControlName="forme_juridique">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <!-- row 3 -->
+                <div class="row row-cols-2">
+                    <div class="col">
+                        <mat-form-field appearance="fill">
+                            <mat-label>ICE</mat-label>
+                            <input  matInput type="text" class="example-right-align"
+                                autocomplete="off" 
+                                placement="bottom" triggers="focusin:focusout" formControlName="ice">
+                        </mat-form-field>
+                    </div>
+
+                    <div class="col">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Justif Formalisme Type</mat-label>
+                            <input  matInput type="text" class="example-right-align"
+                                autocomplete="off" 
+                                placement="bottom" triggers="focusin:focusout" formControlName="justif_formalisme_type">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <!-- row 4 -->
+                <div class="row row-cols-2">
+                    <div class="col">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Justif Formalisme N°</mat-label>
+                            <input  matInput type="text" class="example-right-align"
+                                autocomplete="off" 
+                                placement="bottom" triggers="focusin:focusout" formControlName="justif_formalisme_n">
+                        </mat-form-field>
+                    </div>
+
+                    <div class="col">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Code Ville</mat-label>
+                            <input  matInput type="text" class="example-right-align"
+                                autocomplete="off" 
+                                placement="bottom" triggers="focusin:focusout" formControlName="code_ville">
+                        </mat-form-field>
+                    </div>
+                </div>
+               <!-- row 5 -->
+               <div class="row row-cols-2">
+                    <div class="col">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Code Secteur</mat-label>
+                            <input  matInput type="text" class="example-right-align"
+                                autocomplete="off" 
+                                placement="bottom" triggers="focusin:focusout" formControlName="code_secteur">
+                        </mat-form-field>
+                    </div>
+
+                    <div class="col">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Besoin à Financer</mat-label>
+                            <input  matInput type="text" class="example-right-align"
+                                autocomplete="off" 
+                                placement="bottom" triggers="focusin:focusout" formControlName="besoin_a_financer">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <!-- row 6 -->
+               <div class="row row-cols-2">
+                    <div class="col">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Motant Crédit</mat-label>
+                            <input  matInput type="text" class="example-right-align"
+                                autocomplete="off" 
+                                placement="bottom" triggers="focusin:focusout" formControlName="motant_credit">
+                        </mat-form-field>
+                    </div>
+
+                    <div class="col">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Part AMC</mat-label>
+                            <input  matInput type="text" class="example-right-align"
+                                autocomplete="off" 
+                                placement="bottom" triggers="focusin:focusout" formControlName="part_amc">
+                        </mat-form-field>
+                    </div>
+                </div>
+
+                <!-- row 7 -->
+                <div class="row row-cols-2">
+                    <div class="col">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Part ligne</mat-label>
+                            <input  matInput type="text" 
+                                class="example-right-align" autocomplete="off" placement="bottom" 
+                                triggers="focusin:focusout" formControlName="part_ligne">
+                        </mat-form-field>
+                    </div>
+
+                    <div class="col">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Tx Int</mat-label>
+                            <input  matInput type="text" class="example-right-align"
+                                autocomplete="off" 
+                                placement="bottom" triggers="focusin:focusout" formControlName="tx_int">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <!-- row 8 -->
+                <div class="row row-cols-2">
+                    <div class="col">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Duree Remb</mat-label>
+                            <input  matInput type="text" class="example-right-align"
+                                autocomplete="off" 
+                                placement="bottom" triggers="focusin:focusout" formControlName="duree_remb">
+                        </mat-form-field>
+                    </div>
+
+                    <div class="col">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Durée Differe</mat-label>
+                            <input  matInput type="text" class="example-right-align"
+                                autocomplete="off" 
+                                placement="bottom" triggers="focusin:focusout" formControlName="duree_differe">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <!-- row 9 -->
+                <div class="row row-cols-2">
+                    <div class="col">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Periodicite Rembour</mat-label>
+                            <input  matInput type="text" class="example-right-align"
+                                autocomplete="off" 
+                                placement="bottom" triggers="focusin:focusout" formControlName="periodicite_rembour">
+                        </mat-form-field>
+                    </div>
+
+                    <div class="col">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Sûretes</mat-label>
+                            <input  matInput type="text" class="example-right-align"
+                                autocomplete="off" 
+                                placement="bottom" triggers="focusin:focusout" formControlName="suretes">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <!-- row 10 -->
+                <div class="row row-cols-2">
+                    <div class="col">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Cotation Score</mat-label>
+                            <input  matInput type="text" class="example-right-align"
+                                autocomplete="off" 
+                                placement="bottom" triggers="focusin:focusout" formControlName="cotation_score">
+                        </mat-form-field>
+                    </div>
+
+                    <div class="col">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Type Local</mat-label>
+                            <input  matInput type="text" class="example-right-align"
+                                autocomplete="off" 
+                                placement="bottom" triggers="focusin:focusout" formControlName="type_local">
+                        </mat-form-field>
+                    </div>
+                </div>
+               <!-- row 11 -->
+               <div class="row row-cols-2">
+                    <div class="col">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Appreciation de l'Activité</mat-label>
+                            <input  matInput type="text" class="example-right-align"
+                                autocomplete="off" 
+                                placement="bottom" triggers="focusin:focusout" formControlName="appreciation_de_lactivite">
+                        </mat-form-field>
+                    </div>
+
+                    <div class="col">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Nombre d'Emploi Existant</mat-label>
+                            <input  matInput type="text" class="example-right-align"
+                                autocomplete="off" 
+                                placement="bottom" triggers="focusin:focusout" formControlName="nombre_demploi_existant">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <!-- row 12 -->
+               <div class="row row-cols-2">
+                    <div class="col">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Nombre d'Emploi à Créer</mat-label>
+                            <input  matInput type="text" class="example-right-align"
+                                autocomplete="off" 
+                                placement="bottom" triggers="focusin:focusout" formControlName="nombre_demploi_a_creer">
+                        </mat-form-field>
+                    </div>
+
+                    <div class="col">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Chiffre Aff</mat-label>
+                                <input  matInput type="text" class="example-right-align"
+                                autocomplete="off" 
+                                placement="bottom" triggers="focusin:focusout" formControlName="chiffre_daff">
+                        </mat-form-field>
+                    </div>
+                </div>
+            </form>
+   
+
+        </div>
+
+
+        <div class="smallBox" >
+            <div class="buttons">
+                <div style="margin: 20px;" >
+                    <button class="annuler_btn" mat-stroked-button color="warn" (click)="gotoHome('home')">
+                        <mat-icon class="__icon">cancel</mat-icon>
+                        Annuler</button>
+                </div>
+                <div style="margin: 20px;" >
+                    <button class="confirmer_btn" mat-stroked-button color="primary" (click)="update()">
+                        <mat-icon class="__icon">cloud_done</mat-icon>
+                        Confirmer</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>

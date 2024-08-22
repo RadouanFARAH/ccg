@@ -1,0 +1,35 @@
+
+<div class="container animate__zoomIn animate__animated">
+
+    <div class="login-content">
+
+        <form>
+            <div style="margin: 40px;"></div>
+
+            <h2 class="title cabin">Application d'échange AAA-CCG</h2>
+            <div style="margin: 50px;"></div>
+            <div class="input-div one">
+                <div class="i">
+                    <img src="../../../assets/images/user.png">
+                </div>
+                <div class="div">
+                    <input type="text" class="input" placeholder="Identifiant" name="identifiant" [(ngModel)]="id_ldap">
+                </div>
+            </div>
+            <div style="margin: 20px;"></div>
+
+            <div class="input-div pass">
+                <div class="i">
+                    <img src="../../../assets/images/lock.png">
+                </div>
+                <div class="div">
+                    <input type="password" class="input" placeholder="Mot de passe" name="password"
+                        [(ngModel)]="pwd_ldap">
+                </div>
+            </div>
+            <div style="margin: 40px;"></div>
+
+            <input type="submit" class="btn" value="Se connecter" (click)="login()">
+        </form>
+    </div>
+</div>

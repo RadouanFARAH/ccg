@@ -1,0 +1,427 @@
+Error: ./node_modules/animate.css/animate.min.css
+Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):
+ModuleBuildError: Module build failed (from ./node_modules/css-loader/dist/cjs.js):
+Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: Package subpath './package.json' is not defined by "exports" in D:\CCG\front\node_modules\postcss\package.json
+    at exportsNotFound (node:internal/modules/esm/resolve:294:10)
+    at packageExportsResolve (node:internal/modules/esm/resolve:641:9)
+    at resolveExports (node:internal/modules/cjs/loader:591:36)
+    at Module._findPath (node:internal/modules/cjs/loader:668:31)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1130:27)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\CCG\front\node_modules\css-loader\dist\index.js:12:39)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\CCG\front\node_modules\css-loader\dist\cjs.js:3:16)
+    at D:\CCG\front\node_modules\webpack\lib\NormalModule.js:316:20
+    at D:\CCG\front\node_modules\loader-runner\lib\LoaderRunner.js:367:11
+    at D:\CCG\front\node_modules\loader-runner\lib\LoaderRunner.js:172:11
+    at loadLoader (D:\CCG\front\node_modules\loader-runner\lib\loadLoader.js:32:11)
+    at iteratePitchingLoaders (D:\CCG\front\node_modules\loader-runner\lib\LoaderRunner.js:169:2)
+    at runLoaders (D:\CCG\front\node_modules\loader-runner\lib\LoaderRunner.js:365:2)
+    at NormalModule.doBuild (D:\CCG\front\node_modules\webpack\lib\NormalModule.js:295:3)
+    at NormalModule.build (D:\CCG\front\node_modules\webpack\lib\NormalModule.js:446:15)
+    at Compilation.buildModule (D:\CCG\front\node_modules\webpack\lib\Compilation.js:739:10)
+    at D:\CCG\front\node_modules\webpack\lib\Compilation.js:1111:12
+    at D:\CCG\front\node_modules\webpack\lib\NormalModuleFactory.js:409:6
+    at D:\CCG\front\node_modules\webpack\lib\NormalModuleFactory.js:155:13
+    at AsyncSeriesWaterfallHook.eval [as callAsync] (eval at create (D:\CCG\front\node_modules\webpack\node_modules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>:18:1)
+    at AsyncSeriesWaterfallHook.lazyCompileHook (D:\CCG\front\node_modules\webpack\node_modules\tapable\lib\Hook.js:154:20)
+    at D:\CCG\front\node_modules\webpack\lib\NormalModuleFactory.js:138:29
+    at D:\CCG\front\node_modules\webpack\lib\NormalModuleFactory.js:346:9
+ @ multi ./node_modules/bootstrap/dist/css/bootstrap.min.css ./node_modules/@angular/material/prebuilt-themes/indigo-pink.css ./src/styles.css ./node_modules/bootstrap/dist/css/bootstrap.css ./node_modules/material-design-icons/iconfont/material-icons.css ./node_modules/animate.css/animate.min.css styles[5]
+
+Error: ./src/styles.css
+Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):
+ModuleBuildError: Module build failed (from ./node_modules/css-loader/dist/cjs.js):
+Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: Package subpath './package.json' is not defined by "exports" in D:\CCG\front\node_modules\postcss\package.json
+    at exportsNotFound (node:internal/modules/esm/resolve:294:10)
+    at packageExportsResolve (node:internal/modules/esm/resolve:641:9)
+    at resolveExports (node:internal/modules/cjs/loader:591:36)
+    at Module._findPath (node:internal/modules/cjs/loader:668:31)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1130:27)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\CCG\front\node_modules\css-loader\dist\index.js:12:39)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\CCG\front\node_modules\css-loader\dist\cjs.js:3:16)
+    at D:\CCG\front\node_modules\webpack\lib\NormalModule.js:316:20
+    at D:\CCG\front\node_modules\loader-runner\lib\LoaderRunner.js:367:11
+    at D:\CCG\front\node_modules\loader-runner\lib\LoaderRunner.js:172:11
+    at loadLoader (D:\CCG\front\node_modules\loader-runner\lib\loadLoader.js:32:11)
+    at iteratePitchingLoaders (D:\CCG\front\node_modules\loader-runner\lib\LoaderRunner.js:169:2)
+    at runLoaders (D:\CCG\front\node_modules\loader-runner\lib\LoaderRunner.js:365:2)
+    at NormalModule.doBuild (D:\CCG\front\node_modules\webpack\lib\NormalModule.js:295:3)
+    at NormalModule.build (D:\CCG\front\node_modules\webpack\lib\NormalModule.js:446:15)
+    at Compilation.buildModule (D:\CCG\front\node_modules\webpack\lib\Compilation.js:739:10)
+    at D:\CCG\front\node_modules\webpack\lib\Compilation.js:1111:12
+    at D:\CCG\front\node_modules\webpack\lib\NormalModuleFactory.js:409:6
+    at D:\CCG\front\node_modules\webpack\lib\NormalModuleFactory.js:155:13
+    at AsyncSeriesWaterfallHook.eval [as callAsync] (eval at create (D:\CCG\front\node_modules\webpack\node_modules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>:18:1)
+    at AsyncSeriesWaterfallHook.lazyCompileHook (D:\CCG\front\node_modules\webpack\node_modules\tapable\lib\Hook.js:154:20)
+    at D:\CCG\front\node_modules\webpack\lib\NormalModuleFactory.js:138:29
+    at D:\CCG\front\node_modules\webpack\lib\NormalModuleFactory.js:346:9
+ @ multi ./node_modules/bootstrap/dist/css/bootstrap.min.css ./node_modules/@angular/material/prebuilt-themes/indigo-pink.css ./src/styles.css ./node_modules/bootstrap/dist/css/bootstrap.css ./node_modules/material-design-icons/iconfont/material-icons.css ./node_modules/animate.css/animate.min.css styles[2]
+
+Error: ./node_modules/@angular/material/prebuilt-themes/indigo-pink.css
+Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):
+ModuleBuildError: Module build failed (from ./node_modules/css-loader/dist/cjs.js):
+Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: Package subpath './package.json' is not defined by "exports" in D:\CCG\front\node_modules\postcss\package.json
+    at exportsNotFound (node:internal/modules/esm/resolve:294:10)
+    at packageExportsResolve (node:internal/modules/esm/resolve:641:9)
+    at resolveExports (node:internal/modules/cjs/loader:591:36)
+    at Module._findPath (node:internal/modules/cjs/loader:668:31)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1130:27)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\CCG\front\node_modules\css-loader\dist\index.js:12:39)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\CCG\front\node_modules\css-loader\dist\cjs.js:3:16)
+    at D:\CCG\front\node_modules\webpack\lib\NormalModule.js:316:20
+    at D:\CCG\front\node_modules\loader-runner\lib\LoaderRunner.js:367:11
+    at D:\CCG\front\node_modules\loader-runner\lib\LoaderRunner.js:172:11
+    at loadLoader (D:\CCG\front\node_modules\loader-runner\lib\loadLoader.js:32:11)
+    at iteratePitchingLoaders (D:\CCG\front\node_modules\loader-runner\lib\LoaderRunner.js:169:2)
+    at runLoaders (D:\CCG\front\node_modules\loader-runner\lib\LoaderRunner.js:365:2)
+    at NormalModule.doBuild (D:\CCG\front\node_modules\webpack\lib\NormalModule.js:295:3)
+    at NormalModule.build (D:\CCG\front\node_modules\webpack\lib\NormalModule.js:446:15)
+    at Compilation.buildModule (D:\CCG\front\node_modules\webpack\lib\Compilation.js:739:10)
+    at D:\CCG\front\node_modules\webpack\lib\Compilation.js:1111:12
+    at D:\CCG\front\node_modules\webpack\lib\NormalModuleFactory.js:409:6
+    at D:\CCG\front\node_modules\webpack\lib\NormalModuleFactory.js:155:13
+    at AsyncSeriesWaterfallHook.eval [as callAsync] (eval at create (D:\CCG\front\node_modules\webpack\node_modules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>:18:1)
+    at AsyncSeriesWaterfallHook.lazyCompileHook (D:\CCG\front\node_modules\webpack\node_modules\tapable\lib\Hook.js:154:20)
+    at D:\CCG\front\node_modules\webpack\lib\NormalModuleFactory.js:138:29
+    at D:\CCG\front\node_modules\webpack\lib\NormalModuleFactory.js:346:9
+ @ multi ./node_modules/bootstrap/dist/css/bootstrap.min.css ./node_modules/@angular/material/prebuilt-themes/indigo-pink.css ./src/styles.css ./node_modules/bootstrap/dist/css/bootstrap.css ./node_modules/material-design-icons/iconfont/material-icons.css ./node_modules/animate.css/animate.min.css styles[1]
+
+Error: ./node_modules/material-design-icons/iconfont/material-icons.css
+Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):
+ModuleBuildError: Module build failed (from ./node_modules/css-loader/dist/cjs.js):
+Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: Package subpath './package.json' is not defined by "exports" in D:\CCG\front\node_modules\postcss\package.json
+    at exportsNotFound (node:internal/modules/esm/resolve:294:10)
+    at packageExportsResolve (node:internal/modules/esm/resolve:641:9)
+    at resolveExports (node:internal/modules/cjs/loader:591:36)
+    at Module._findPath (node:internal/modules/cjs/loader:668:31)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1130:27)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\CCG\front\node_modules\css-loader\dist\index.js:12:39)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\CCG\front\node_modules\css-loader\dist\cjs.js:3:16)
+    at D:\CCG\front\node_modules\webpack\lib\NormalModule.js:316:20
+    at D:\CCG\front\node_modules\loader-runner\lib\LoaderRunner.js:367:11
+    at D:\CCG\front\node_modules\loader-runner\lib\LoaderRunner.js:172:11
+    at loadLoader (D:\CCG\front\node_modules\loader-runner\lib\loadLoader.js:32:11)
+    at iteratePitchingLoaders (D:\CCG\front\node_modules\loader-runner\lib\LoaderRunner.js:169:2)
+    at runLoaders (D:\CCG\front\node_modules\loader-runner\lib\LoaderRunner.js:365:2)
+    at NormalModule.doBuild (D:\CCG\front\node_modules\webpack\lib\NormalModule.js:295:3)
+    at NormalModule.build (D:\CCG\front\node_modules\webpack\lib\NormalModule.js:446:15)
+    at Compilation.buildModule (D:\CCG\front\node_modules\webpack\lib\Compilation.js:739:10)
+    at D:\CCG\front\node_modules\webpack\lib\Compilation.js:1111:12
+    at D:\CCG\front\node_modules\webpack\lib\NormalModuleFactory.js:409:6
+    at D:\CCG\front\node_modules\webpack\lib\NormalModuleFactory.js:155:13
+    at AsyncSeriesWaterfallHook.eval [as callAsync] (eval at create (D:\CCG\front\node_modules\webpack\node_modules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>:18:1)
+    at AsyncSeriesWaterfallHook.lazyCompileHook (D:\CCG\front\node_modules\webpack\node_modules\tapable\lib\Hook.js:154:20)
+    at D:\CCG\front\node_modules\webpack\lib\NormalModuleFactory.js:138:29
+    at D:\CCG\front\node_modules\webpack\lib\NormalModuleFactory.js:346:9
+ @ multi ./node_modules/bootstrap/dist/css/bootstrap.min.css ./node_modules/@angular/material/prebuilt-themes/indigo-pink.css ./src/styles.css ./node_modules/bootstrap/dist/css/bootstrap.css ./node_modules/material-design-icons/iconfont/material-icons.css ./node_modules/animate.css/animate.min.css styles[4]
+
+Error: ./node_modules/bootstrap/dist/css/bootstrap.min.css
+Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):
+ModuleBuildError: Module build failed (from ./node_modules/css-loader/dist/cjs.js):
+Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: Package subpath './package.json' is not defined by "exports" in D:\CCG\front\node_modules\postcss\package.json
+    at exportsNotFound (node:internal/modules/esm/resolve:294:10)
+    at packageExportsResolve (node:internal/modules/esm/resolve:641:9)
+    at resolveExports (node:internal/modules/cjs/loader:591:36)
+    at Module._findPath (node:internal/modules/cjs/loader:668:31)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1130:27)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\CCG\front\node_modules\css-loader\dist\index.js:12:39)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\CCG\front\node_modules\css-loader\dist\cjs.js:3:16)
+    at D:\CCG\front\node_modules\webpack\lib\NormalModule.js:316:20
+    at D:\CCG\front\node_modules\loader-runner\lib\LoaderRunner.js:367:11
+    at D:\CCG\front\node_modules\loader-runner\lib\LoaderRunner.js:172:11
+    at loadLoader (D:\CCG\front\node_modules\loader-runner\lib\loadLoader.js:32:11)
+    at iteratePitchingLoaders (D:\CCG\front\node_modules\loader-runner\lib\LoaderRunner.js:169:2)
+    at runLoaders (D:\CCG\front\node_modules\loader-runner\lib\LoaderRunner.js:365:2)
+    at NormalModule.doBuild (D:\CCG\front\node_modules\webpack\lib\NormalModule.js:295:3)m
+    at NormalModule.build (D:\CCG\front\node_modules\webpack\lib\NormalModule.js:446:15)
+    at Compilation.buildModule (D:\CCG\front\node_modules\webpack\lib\Compilation.js:739:10)
+    at D:\CCG\front\node_modules\webpack\lib\Compilation.js:1111:12
+    at D:\CCG\front\node_modules\webpack\lib\NormalModuleFactory.js:409:6
+    at D:\CCG\front\node_modules\webpack\lib\NormalModuleFactory.js:155:13
+    at AsyncSeriesWaterfallHook.eval [as callAsync] (eval at create (D:\CCG\front\node_modules\webpack\node_modules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>:18:1)
+    at AsyncSeriesWaterfallHook.lazyCompileHook (D:\CCG\front\node_modules\webpack\node_modules\tapable\lib\Hook.js:154:20)
+    at D:\CCG\front\node_modules\webpack\lib\NormalModuleFactory.js:138:29
+    at D:\CCG\front\node_modules\webpack\lib\NormalModuleFactory.js:346:9
+ @ multi ./node_modules/bootstrap/dist/css/bootstrap.min.css ./node_modules/@angular/material/prebuilt-themes/indigo-pink.css ./src/styles.css ./node_modules/bootstrap/dist/css/bootstrap.css ./node_modules/material-design-icons/iconfont/material-icons.css ./node_modules/animate.css/animate.min.css styles[0]
+
+Error: ./node_modules/bootstrap/dist/css/bootstrap.css
+Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):
+ModuleBuildError: Module build failed (from ./node_modules/css-loader/dist/cjs.js):
+Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: Package subpath './package.json' is not defined by "exports" in D:\CCG\front\node_modules\postcss\package.json
+    at exportsNotFound (node:internal/modules/esm/resolve:294:10)
+    at packageExportsResolve (node:internal/modules/esm/resolve:641:9)
+    at resolveExports (node:internal/modules/cjs/loader:591:36)
+    at Module._findPath (node:internal/modules/cjs/loader:668:31)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1130:27)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\CCG\front\node_modules\css-loader\dist\index.js:12:39)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\CCG\front\node_modules\css-loader\dist\cjs.js:3:16)
+    at D:\CCG\front\node_modules\webpack\lib\NormalModule.js:316:20
+    at D:\CCG\front\node_modules\loader-runner\lib\LoaderRunner.js:367:11
+    at D:\CCG\front\node_modules\loader-runner\lib\LoaderRunner.js:172:11
+    at loadLoader (D:\CCG\front\node_modules\loader-runner\lib\loadLoader.js:32:11)
+    at iteratePitchingLoaders (D:\CCG\front\node_modules\loader-runner\lib\LoaderRunner.js:169:2)
+    at runLoaders (D:\CCG\front\node_modules\loader-runner\lib\LoaderRunner.js:365:2)
+    at NormalModule.doBuild (D:\CCG\front\node_modules\webpack\lib\NormalModule.js:295:3)
+    at NormalModule.build (D:\CCG\front\node_modules\webpack\lib\NormalModule.js:446:15)
+    at Compilation.buildModule (D:\CCG\front\node_modules\webpack\lib\Compilation.js:739:10)
+    at D:\CCG\front\node_modules\webpack\lib\Compilation.js:1111:12
+    at D:\CCG\front\node_modules\webpack\lib\NormalModuleFactory.js:409:6
+    at D:\CCG\front\node_modules\webpack\lib\NormalModuleFactory.js:155:13
+    at AsyncSeriesWaterfallHook.eval [as callAsync] (eval at create (D:\CCG\front\node_modules\webpack\node_modules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>:18:1)
+    at AsyncSeriesWaterfallHook.lazyCompileHook (D:\CCG\front\node_modules\webpack\node_modules\tapable\lib\Hook.js:154:20)
+    at D:\CCG\front\node_modules\webpack\lib\NormalModuleFactory.js:138:29
+    at D:\CCG\front\node_modules\webpack\lib\NormalModuleFactory.js:346:9
+ @ multi ./node_modules/bootstrap/dist/css/bootstrap.min.css ./node_modules/@angular/material/prebuilt-themes/indigo-pink.css ./src/styles.css ./node_modules/bootstrap/dist/css/bootstrap.css ./node_modules/material-design-icons/iconfont/material-icons.css ./node_modules/animate.css/animate.min.css styles[3]
+
+Error: ./src/app/app.component.css
+Module build failed (from ./node_modules/postcss-loader/dist/cjs.js):
+Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: Package subpath './package.json' is not defined by "exports" in D:\CCG\front\node_modules\postcss\package.json
+    at exportsNotFound (node:internal/modules/esm/resolve:294:10)
+    at packageExportsResolve (node:internal/modules/esm/resolve:641:9)
+    at resolveExports (node:internal/modules/cjs/loader:591:36)
+    at Module._findPath (node:internal/modules/cjs/loader:668:31)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1130:27)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\CCG\front\node_modules\postcss-loader\dist\index.js:16:39)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\CCG\front\node_modules\postcss-loader\dist\cjs.js:3:18)
+
+Error: ./src/app/components/p0-login/p0-login.component.css
+Module build failed (from ./node_modules/postcss-loader/dist/cjs.js):
+Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: Package subpath './package.json' is not defined by "exports" in D:\CCG\front\node_modules\postcss\package.json
+    at exportsNotFound (node:internal/modules/esm/resolve:294:10)
+    at packageExportsResolve (node:internal/modules/esm/resolve:641:9)
+    at resolveExports (node:internal/modules/cjs/loader:591:36)
+    at Module._findPath (node:internal/modules/cjs/loader:668:31)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1130:27)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\CCG\front\node_modules\postcss-loader\dist\index.js:16:39)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\CCG\front\node_modules\postcss-loader\dist\cjs.js:3:18)
+
+Error: ./src/app/components/p1-home/p1-home.component.css
+Module build failed (from ./node_modules/postcss-loader/dist/cjs.js):
+Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: Package subpath './package.json' is not defined by "exports" in D:\CCG\front\node_modules\postcss\package.json
+    at exportsNotFound (node:internal/modules/esm/resolve:294:10)
+    at packageExportsResolve (node:internal/modules/esm/resolve:641:9)
+    at resolveExports (node:internal/modules/cjs/loader:591:36)
+    at Module._findPath (node:internal/modules/cjs/loader:668:31)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1130:27)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\CCG\front\node_modules\postcss-loader\dist\index.js:16:39)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\CCG\front\node_modules\postcss-loader\dist\cjs.js:3:18)
+
+Error: ./src/app/components/p2-modification-a/p2-modification-a.component.css
+Module build failed (from ./node_modules/postcss-loader/dist/cjs.js):
+Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: Package subpath './package.json' is not defined by "exports" in D:\CCG\front\node_modules\postcss\package.json
+    at exportsNotFound (node:internal/modules/esm/resolve:294:10)
+    at packageExportsResolve (node:internal/modules/esm/resolve:641:9)
+    at resolveExports (node:internal/modules/cjs/loader:591:36)
+    at Module._findPath (node:internal/modules/cjs/loader:668:31)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1130:27)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\CCG\front\node_modules\postcss-loader\dist\index.js:16:39)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\CCG\front\node_modules\postcss-loader\dist\cjs.js:3:18)
+
+Error: ./node_modules/@angular/material/prebuilt-themes/indigo-pink.css (./node_modules/css-loader/dist/cjs.js??ref--13-1!./node_modules/postcss-loader/dist/cjs.js??ref--13-2!./node_modules/@angular/material/prebuilt-themes/indigo-pink.css)
+Module build failed (from ./node_modules/css-loader/dist/cjs.js):
+Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: Package subpath './package.json' is not defined by "exports" in D:\CCG\front\node_modules\postcss\package.json
+    at exportsNotFound (node:internal/modules/esm/resolve:294:10)
+    at packageExportsResolve (node:internal/modules/esm/resolve:641:9)
+    at resolveExports (node:internal/modules/cjs/loader:591:36)
+    at Module._findPath (node:internal/modules/cjs/loader:668:31)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1130:27)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\CCG\front\node_modules\css-loader\dist\index.js:12:39)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\CCG\front\node_modules\css-loader\dist\cjs.js:3:16)
+
+Error: ./node_modules/animate.css/animate.min.css (./node_modules/css-loader/dist/cjs.js??ref--13-1!./node_modules/postcss-loader/dist/cjs.js??ref--13-2!./node_modules/animate.css/animate.min.css)
+Module build failed (from ./node_modules/css-loader/dist/cjs.js):
+Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: Package subpath './package.json' is not defined by "exports" in D:\CCG\front\node_modules\postcss\package.json
+    at exportsNotFound (node:internal/modules/esm/resolve:294:10)
+    at packageExportsResolve (node:internal/modules/esm/resolve:641:9)
+    at resolveExports (node:internal/modules/cjs/loader:591:36)
+    at Module._findPath (node:internal/modules/cjs/loader:668:31)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1130:27)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\CCG\front\node_modules\css-loader\dist\index.js:12:39)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\CCG\front\node_modules\css-loader\dist\cjs.js:3:16)
+
+Error: ./node_modules/bootstrap/dist/css/bootstrap.css (./node_modules/css-loader/dist/cjs.js??ref--13-1!./node_modules/postcss-loader/dist/cjs.js??ref--13-2!./node_modules/bootstrap/dist/css/bootstrap.css)
+Module build failed (from ./node_modules/css-loader/dist/cjs.js):
+Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: Package subpath './package.json' is not defined by "exports" in D:\CCG\front\node_modules\postcss\package.json
+    at exportsNotFound (node:internal/modules/esm/resolve:294:10)
+    at packageExportsResolve (node:internal/modules/esm/resolve:641:9)
+    at resolveExports (node:internal/modules/cjs/loader:591:36)
+    at Module._findPath (node:internal/modules/cjs/loader:668:31)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1130:27)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\CCG\front\node_modules\css-loader\dist\index.js:12:39)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\CCG\front\node_modules\css-loader\dist\cjs.js:3:16)
+
+Error: ./node_modules/bootstrap/dist/css/bootstrap.min.css (./node_modules/css-loader/dist/cjs.js??ref--13-1!./node_modules/postcss-loader/dist/cjs.js??ref--13-2!./node_modules/bootstrap/dist/css/bootstrap.min.css)
+Module build failed (from ./node_modules/css-loader/dist/cjs.js):
+Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: Package subpath './package.json' is not defined by "exports" in D:\CCG\front\node_modules\postcss\package.json
+    at exportsNotFound (node:internal/modules/esm/resolve:294:10)
+    at packageExportsResolve (node:internal/modules/esm/resolve:641:9)
+    at resolveExports (node:internal/modules/cjs/loader:591:36)
+    at Module._findPath (node:internal/modules/cjs/loader:668:31)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1130:27)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\CCG\front\node_modules\css-loader\dist\index.js:12:39)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\CCG\front\node_modules\css-loader\dist\cjs.js:3:16)
+
+Error: ./node_modules/material-design-icons/iconfont/material-icons.css (./node_modules/css-loader/dist/cjs.js??ref--13-1!./node_modules/postcss-loader/dist/cjs.js??ref--13-2!./node_modules/material-design-icons/iconfont/material-icons.css)
+Module build failed (from ./node_modules/css-loader/dist/cjs.js):
+Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: Package subpath './package.json' is not defined by "exports" in D:\CCG\front\node_modules\postcss\package.json
+    at exportsNotFound (node:internal/modules/esm/resolve:294:10)
+    at packageExportsResolve (node:internal/modules/esm/resolve:641:9)
+    at resolveExports (node:internal/modules/cjs/loader:591:36)
+    at Module._findPath (node:internal/modules/cjs/loader:668:31)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1130:27)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\CCG\front\node_modules\css-loader\dist\index.js:12:39)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\CCG\front\node_modules\css-loader\dist\cjs.js:3:16)
+
+Error: ./src/styles.css (./node_modules/css-loader/dist/cjs.js??ref--13-1!./node_modules/postcss-loader/dist/cjs.js??ref--13-2!./src/styles.css)
+Module build failed (from ./node_modules/css-loader/dist/cjs.js):
+Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: Package subpath './package.json' is not defined by "exports" in D:\CCG\front\node_modules\postcss\package.json
+    at exportsNotFound (node:internal/modules/esm/resolve:294:10)
+    at packageExportsResolve (node:internal/modules/esm/resolve:641:9)
+    at resolveExports (node:internal/modules/cjs/loader:591:36)
+    at Module._findPath (node:internal/modules/cjs/loader:668:31)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1130:27)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\CCG\front\node_modules\css-loader\dist\index.js:12:39)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\CCG\front\node_modules\css-loader\dist\cjs.js:3:16)

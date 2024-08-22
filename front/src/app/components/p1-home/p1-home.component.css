@@ -1,0 +1,175 @@
+.globalBox {
+  min-height: 100vh;
+}
+
+.container {
+  margin: 0;
+  max-width: 800px;
+  min-height: 90vh;
+  width: 60%;
+  background: linear-gradient(135deg, #d0e5ff, #ecfdd5);
+  padding: 25px 30px;
+  border-radius: 0px 5px 5px 0px;
+}
+.menu {
+  z-index: 200;
+  padding: 0;
+  /* width: 30%; */
+  /* max-width: 812px; */
+  /* min-height: 90vh; */
+  background: linear-gradient(135deg, #d0e5ff, #ecfdd5);
+  border-radius: 5px 0px 0px 5px;
+}
+.container .title {
+  margin: 5px auto;
+}
+
+.container .title h2 {
+  /* margin-top: 50px; */
+  text-align: center;
+  color: #105e62;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.listAnnexe {
+  display: grid;
+}
+.Item {
+  height: 50px;
+  background: #d7eade;
+  color: black;
+}
+.listAnnexe h4 {
+  margin-bottom: 0px;
+  margin-right: 30px;
+  position: relative;
+  top: 20px;
+}
+.listAnnexe button {
+  margin: 1px 0px;
+  border-radius: 0px;
+}
+
+
+/*=================*/
+.darkGrey {
+  background: #d0e5ff;
+}
+.listAnnexe mat-form-field {
+  width: 100% !important;
+  padding: 0px !important;
+  margin: 0px !important;
+  border-radius: 5px !important;
+}
+.blankColor {
+  background: #d7eade;
+}
+.listAnnexe mat-form-field .mat-form-field-infix {
+  border: none;
+}
+
+.listAnnexe mat-form-field mat-select {
+  position: relative;
+  top: -2px;
+}
+.smallBox {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+::ng-deep .mat-form-field-underline {
+  display: none;
+}
+
+::ng-deep .mat-select-arrow {
+  position: relative;
+  top: 4px;
+}
+
+.centred {
+  margin: 15px auto;
+}
+
+/*=========== btn_logout ============*/
+
+.logout_btn {
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.generer_btn {
+  background-image: linear-gradient(to right, #3a6fb3, #89bd45);
+  background-size: 200%;
+  color: white;
+  border: none;
+}
+.generer_btn:hover {
+  background-position: right;
+}
+.deposer_btn {
+  background-image: linear-gradient(to right, #3a6fb3, #bd4545);
+  background-size: 200%;
+  color: white;
+  border: none;
+}
+.deposer_btn:hover {
+  background-position: right;
+}
+.logout_btn button {
+  background-image: linear-gradient(to right, #3a6fb3, #dd1616);
+  background-size: 200%;
+}
+.logout_btn button:hover {
+  background-position: right;
+}
+
+.refresh_btn {
+  background-image: linear-gradient(to right, #3a6fb3, #f1e5e5);
+  background-size: 200%;
+}
+.refresh_btn:hover {
+  background-position: right;
+}
+.btn {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to right, #3a6fb3, #89bd45);
+  background-size: 200%;
+  font-size: 1.4rem;
+  color: #fff;
+  margin: 3rem 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn:hover {
+  background-position: right;
+}
+
+.title {
+  padding: 20px;
+}
+
+
+.list{
+  list-style: none;
+}
+.files{
+  width: 80%;
+  margin: 0 auto;
+}
+.list li {
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0px 0px 4px 0px #105e62;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}

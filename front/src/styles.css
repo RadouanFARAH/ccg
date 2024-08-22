@@ -1,0 +1,49 @@
+@import '~material-design-icons/iconfont/material-icons.css';
+@import '~animate.css/animate.min';
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url(./assets/fonts/Montserrat.ttf) format("truetype");
+}
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  
+
+}
+
+html, body { 
+  height: 100%;
+  background: #ffffff;
+ }
+.globalBox{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  padding: 10px;
+  background: #ffffff;
+ 
+}
+body { margin: 0;}
+.buttons{
+  display: flex;
+  justify-content: center;
+
+}
+.success{
+  background-color: rgb(22, 173, 5);
+  color: aliceblue;
+  font-weight: 800;
+}
+.error{
+  background-color: rgb(199, 6, 6);
+  color: aliceblue;
+  font-weight: 800;
+
+}
+.__icon {
+  position: relative;
+  top: -3px;
+  margin-right: 5px;
+}

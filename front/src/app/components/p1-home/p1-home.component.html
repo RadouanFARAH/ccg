@@ -1,0 +1,245 @@
+<div class="globalBox">
+  <div class="logout_btn">
+    <button mat-icon-button mat-raised-button color="warn" (click)="gotoLogout()">
+      <mat-icon>power_settings_new</mat-icon>
+    </button>
+  </div>
+
+  <div class="menu">
+    <div class="title">
+      <h2>Selectioner l'annexe</h2>
+      <!-- <h2>Interface de Documents</h2> -->
+    </div>
+    <div class="listAnnexe">
+      <button
+        class="Item"
+        mat-flat-button
+        (click)="selectionChanged(1)"
+        [ngClass]="{ darkGrey: modeselect == 1 }"
+      >
+        <img src="../../../assets/icons/annexe1.png" alt="Annexe 1 icon" /> 
+        Annexe 1 et 4
+      </button>
+
+      <!-- <button class="Item" mat-flat-button (click)="selectionChanged(2)" [ngClass]="{ darkGrey: modeselect == 2 }">
+        Déposés
+      </button>
+      <button class="Item" mat-flat-button (click)="selectionChanged(3)" [ngClass]="{ darkGrey: modeselect == 3 }">
+        Réponses
+      </button> -->
+
+       <button
+        class="Item"
+        mat-flat-button
+        (click)="selectionChanged(4)"
+        [ngClass]="{ darkGrey: modeselect == 4 }"
+      >
+        <img src="../../../assets/icons/annexe4.png" alt="Annexe 4 icon" />
+        Annexe 4
+      </button> 
+      <button
+        class="Item"
+        mat-flat-button
+        (click)="selectionChanged(5)"
+        [ngClass]="{ darkGrey: modeselect == 5 }"
+      >
+        <img src="../../../assets/icons/annexe5.png" alt="Annexe 5 icon" />
+        Annexe 5
+      </button>
+      <button
+        class="Item"
+        mat-flat-button
+        (click)="selectionChanged(8)"
+        [ngClass]="{ darkGrey: modeselect == 8 }"
+      >
+        <img src="../../../assets/icons/annexe8.png" alt="Annexe 8 icon" />
+        Annexe 8
+      </button> 
+    </div>
+  </div>
+  <div [ngClass]="{
+      container: true,
+      blankColor: !modeselect,
+      animate__animated: true,
+      animate__slideInLeft: true
+    }">
+    <div *ngIf="modeselect == 1">
+      <div class="buttons">
+        <div style="margin: 20px">
+          <button class="refresh_btn" mat-icon-button (click)="actualiser()" mat-raised-button color="accent">
+            <mat-icon>refresh</mat-icon>
+          </button>
+        </div>
+      </div>
+
+      <div class="title" *ngIf="!dataSource.filteredData.length && !generating">
+        <h2 class="animate__animated animate__bounce">
+          Veuillez d'abord générer les annexes!
+        </h2>
+      </div>
+      <mat-progress-bar class="centred" *ngIf="!dataSource.filteredData.length && generating" mode="determinate"
+        [value]="progress"></mat-progress-bar>
+
+      <div style="display: flex; gap: 10px">
+        <div>
+          <h1 style="text-align: center">Annexe 1</h1>
+          <div class="smallBox" *ngIf="dataSource.filteredData.length">
+            <table mat-table [dataSource]="dataSource" matSort>
+              <ng-container matColumnDef="identifiant_credit">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                  Identifiant crédit
+                </th>
+                <td mat-cell *matCellDef="let element">
+                  {{ element.identifiant_credit }}
+                </td>
+              </ng-container>
+              <ng-container matColumnDef="status">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                  Réponse CCG
+                </th>
+                <td mat-cell *matCellDef="let element">
+                  <mat-icon *ngIf="!element.status">update</mat-icon>
+                  <mat-icon *ngIf="element.status == 1">verified_user</mat-icon>
+                  <mat-hint *ngIf="element.status == 1" style="color: rgb(10, 130, 10)">Validé</mat-hint>
+                  <mat-icon *ngIf="element.status > 1">error</mat-icon>
+                  <mat-hint *ngIf="element.status > 1" style="color: rgb(202, 46, 46)">Erroné</mat-hint>
+                  <mat-hint *ngIf="!element.status">en attente</mat-hint>
+                  {{ element.status }}
+                </td>
+              </ng-container>
+              <ng-container matColumnDef="options">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header></th>
+                <td mat-cell *matCellDef="let element">
+                  <button mat-icon-button>
+                    <mat-icon (click)="gotoDetails(element)">edit</mat-icon>
+                  </button>
+                </td>
+              </ng-container>
+              <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+            </table>
+          </div>
+
+          <mat-paginator *ngIf="modeselect && dataSource" class="{{ display }}" [pageSizeOptions]="pageSizeOptions"
+            showFirstLastButtons></mat-paginator>
+        </div>
+        <div>
+          <h1 style="text-align: center">Annexe 4</h1>
+          <div class="smallBox" *ngIf="dataSource4.filteredData.length">
+            <table mat-table [dataSource]="dataSource4" matSort>
+              <ng-container matColumnDef="identifiant_credit">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                  Identifiant crédit
+                </th>
+                <td mat-cell *matCellDef="let element">
+                  {{ element.identifiant_credit }}
+                </td>
+              </ng-container>
+              <ng-container matColumnDef="status">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                  Réponse CCG
+                </th>
+                <td mat-cell *matCellDef="let element">
+                  <mat-icon *ngIf="!element.status">update</mat-icon>
+                  <mat-icon *ngIf="element.status == 1">verified_user</mat-icon>
+                  <mat-hint *ngIf="element.status == 1" style="color: rgb(10, 130, 10)">Validé</mat-hint>
+                  <mat-icon *ngIf="element.status > 1">error</mat-icon>
+                  <mat-hint *ngIf="element.status > 1" style="color: rgb(202, 46, 46)">Erroné</mat-hint>
+                  <mat-hint *ngIf="!element.status">en attente</mat-hint>
+                  {{ element.status }}
+                </td>
+              </ng-container>
+              <ng-container matColumnDef="options">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header></th>
+                <td mat-cell *matCellDef="let element">
+                  <button mat-icon-button>
+                    <mat-icon (click)="gotoDetails(element)">edit</mat-icon>
+                  </button>
+                </td>
+              </ng-container>
+              <tr mat-header-row *matHeaderRowDef="displayedColumns4"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns4"></tr>
+            </table>
+          </div>
+
+          <mat-paginator *ngIf="modeselect && dataSource4" class="{{ display }}" [pageSizeOptions]="pageSizeOptions"
+            showFirstLastButtons></mat-paginator>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <div style="margin: 20px" *ngIf="modeselect == 1">
+          <button class="generer_btn" mat-stroked-button color="primary" (click)="genererAnnexe()">
+            <mat-icon class="__icon">cloud_download</mat-icon>
+            Génerer
+          </button>
+        </div>
+        <div style="margin: 20px" *ngIf="modeselect == 1">
+          <button class="deposer_btn" mat-stroked-button color="warn" (click)="deposerAnnexe()">
+            <mat-icon class="__icon">cloud_upload</mat-icon>
+            Déposer
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="modeselect == 2">
+      <div class="buttons">
+        <div style="margin: 20px">
+          <button class="refresh_btn" mat-icon-button (click)="getSent()" mat-raised-button color="accent">
+            <mat-icon>refresh</mat-icon>
+          </button>
+        </div>
+      </div>
+
+      <div class="title" *ngIf="!dataSource.filteredData.length && !generating">
+        <h2  class="animate__animated animate__bounce">
+          {{sentFiles.length?'List de documents déposés sur CFT :':'Aucun documents'}}
+        </h2>
+      </div>
+      <div class="files">
+        <ul class="list" *ngIf="sentFiles.length">
+          <li style="display: grid;" *ngFor="let file of sentFiles">
+            <span style="text-align: center;">{{file}}</span>
+            <button class="generer_btn" mat-stroked-button color="primary" (click)="download('archive',file)">
+            <mat-icon class="__icon">cloud_download</mat-icon>
+            download</button>
+          </li>
+        </ul>
+      </div>
+
+
+    </div>
+
+
+    <div *ngIf="modeselect == 3">
+      <div class="buttons">
+        <div style="margin: 20px">
+          <button class="refresh_btn" mat-icon-button (click)="getRecieved()" mat-raised-button color="accent">
+            <mat-icon>refresh</mat-icon>
+          </button>
+        </div>
+      </div>
+
+      <div class="title" *ngIf="!dataSource.filteredData.length && !generating">
+        <h2 class="animate__animated animate__bounce">
+          {{recievedFiles.length?'List de documents réponses sur CFT :':'Aucun documents'}}
+        </h2>
+      </div>
+
+
+      <div class="files">
+        <ul class="list" *ngIf="recievedFiles.length">
+          <li style="display: grid;" *ngFor="let file of recievedFiles"><span style="text-align: center;">{{file}}</span> <button class="generer_btn" mat-stroked-button color="primary" (click)="download('reception_cft/CCG',file)">
+            <mat-icon class="__icon">cloud_download</mat-icon>
+            download
+          </button>
+        </li>
+        </ul>
+      </div>
+
+
+    </div>
+
+  </div>
+</div>
